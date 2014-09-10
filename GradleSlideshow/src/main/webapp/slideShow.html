@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SlideShow</title>
+<link rel="stylesheet" type="text/css" href="css/Slideshow.css">
+<script type="text/javascript" src="js/Slideshow.js"></script>
+</head>
+
+<h1>This is a SlideShow!</h1>
+<body>
+	<div class="listContainer">
+		<div id="list">
+		<!--must be on same line otherwise will be off by 1 px -->
+			<img src="images/ball1.jpg"><img src="images/ball2.jpg"><img src="images/ball3.jpg"><img src="images/ball4.jpg"><img src="images/ball5.jpg"><img src="images/ball6.jpg">
+		</div>
+	</div>
+	<div class="buttons">
+		<button onclick="slideImg(-1)">Previous Slide</button>
+		<button onclick="slideImg(1)">Next Slide</button>
+	</div>
+</body>
+</html>

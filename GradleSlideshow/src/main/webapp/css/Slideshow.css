@@ -1,0 +1,65 @@
+h1 
+{
+	text-align: center
+}
+
+.buttons
+{
+	text-align: center;	
+}
+.listContainer
+{
+    position: relative;
+    height: 400px;
+    width: 600px;
+    overflow:hidden;
+    white-space: nowrap;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+#list
+{
+    position:absolute;
+    display: block;
+    white-space: nowrap;
+}
+
+#list > div
+{
+    white-space: nowrap;
+    display: inline-block;
+    width: 598px;
+    height: 398px;
+    border: 1px solid blue;
+}
+
+img
+{
+	height: 400px; 
+	width: 600px;
+}
+button 
+{
+ /* General Properties */
+  height:34px;
+  width:250px;
+  border:1px solid #858fa6;
+  background:#4a5775;
+  
+  /* CSS3 Styling */
+  background:-moz-linear-gradient(top, #606c88, #3f4c6b);
+  background:-webkit-gradient(linear, left top, left bottom, from(#606c88), to(#3f4c6b));
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  -moz-box-shadow:0px 0px 5px #000;
+  -webkit-box-shadow:0px 0px 5px #000;
+  box-shadow:0px 0px 5px #000;
+  
+  /* Text Styling */
+  font-family:'AirstreamRegular', Georgia, 'Times New Roman', serif;
+  color:#e5edff;
+  font-size:30px;
+  text-shadow:0px 0px 5px rgba(0, 0, 0, 0.75);
+}
+}
