@@ -31,11 +31,14 @@ body {
 	top:10%;
 }
 .left {
-	/*keeps on page?*/
-	postion: absolute;
+	/*keeps on page*/
+	position:fixed;
 	background: #ccc;
 	width: 25%;
 	float: left;
+  	top:4em;
+  	left:0;
+  	margin-right:1em;
 }
 
 .left h1 {
