@@ -1,67 +1,74 @@
 /**
  * David Sam
  */
-//init timeout
-var slideToTimeout = 0;
 
 /**
- * This function is to slide the img/divs to the next. 
- * @param old
- * 	current image
- * @param newLeft
- * 	distance of new image's current left
+ * loads the slide when button or link is pressed
+ * In the end we need to hide the picture and let it fade in
  */
-function slideTo(old, newLeft) {
-	// must clear the timeout otherwise will break.
-    clearTimeout(slideToTimeout);
-    
-    //Higher these values are, slower it goes.
-    var steps = 30;
-    var timer = 30;
-    
-    //the position of the old img.
-    //old.stlye.left = left postion of old.
-    var oldLeft = parseInt(old.style.left) || 0;
-    
-    var diff = newLeft - oldLeft;
-    //The step size is the diff between the left location of the new image and the left location of the old img.
-    var stepSize = diff / steps;
-    
-    /**
-     * This function is here because step() needs to be used in here and must be declared before usage.
-     * Also it needs the attributes that only exists here.
-     */
-    function next() {
-    	//determining the shift needed
-        oldLeft += stepSize;
-        //sets the left position of el
-        old.style.left = oldLeft + "px";
-        
-        //if no if, runs forever, needs to reach 0
-        if (--steps) {
-            slideToTimeout = setTimeout(next, timer);
-        }
-    }
-    next();
+function loadIndividualSlide(slideNumber){ 
+	$( ".listContainer" ).load( "database/document"+slideNumber+".html").appendTo($(".listContainer")).hide().fadeIn(750); 
 }
+ 
+/*
+ * When the pages loads, we will load the first slide
+ */
+function loadFirstSlide(){
+	$( ".listContainer" ).load( "database/document1.html").appendTo($(".listContainer")); 
+}
+window.onload = loadFirstSlide;
 
 
-//the width of each slide (all will be 600px)
-var slideWidth = 600;
-// the slide number, will start at 0, but when function is called, will add or subtract
-var slideNumber = 0;
-/**
- * 
- * @param counter
- * 	Can be 1 or -1, depending if you want to slide to left or right
- */
-function slideImg(counter) {
-	// will keep track where you are in the slides
-    slideNumber += counter;
-    
-    var theSlides = document.getElementById("list");
-    // uses the helper function to do the sliding
-    // theslides= the list of slides, starts wiht first
-    // -slideNumber * slideWidth this locates the exact location of where you are currently and slides it.
-    slideTo(theSlides, -slideNumber * slideWidth);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+// The array to house all the documents
+var pages = [ 'database/document1.html', 'database/document2.html',
+		'database/document3.html' ];
+
+//get multiple items and add them to the element.
+function doLoad() {
+
+	if (pages.length > 0) {
+
+		// use shift to get the next page off the array
+		$.get(pages.shift(), function(content) {
+			// append content to .main
+			$('.slides').append(content);
+			// call do load to get the next entry
+			doLoad();
+		});
+	}
+};
+
+// when page loads, so will this.
+window.onload = doLoad;
+*/

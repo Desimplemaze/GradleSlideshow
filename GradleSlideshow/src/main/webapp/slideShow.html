@@ -5,19 +5,47 @@
 <title>SlideShow</title>
 <link rel="stylesheet" type="text/css" href="css/Slideshow.css">
 <script type="text/javascript" src="js/Slideshow.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 
 <h1>This is a SlideShow!</h1>
 <body>
-	<div class="listContainer">
-		<div id="list">
-		<!--must be on same line otherwise will be off by 1 px -->
-			<img src="images/ball1.jpg"><img src="images/ball2.jpg"><img src="images/ball3.jpg"><img src="images/ball4.jpg"><img src="images/ball5.jpg"><img src="images/ball6.jpg">
-		</div>
+
+	<div class="left">
+		<h1>Navigation</h1>
+			
+		<ul>
+			<li><a href="javascript:loadIndividualSlide(1);">Slide 1</a></li>
+			<li><a href="javascript:loadIndividualSlide(2);">Slide 2</a></li>
+			<li><a href="javascript:loadIndividualSlide(3);">Slide 3</a></li>
+    	  	<li><a href="javascript:loadIndividualSlide(4);">Slide 4</a></li>
+      		<li><a href="javascript:loadIndividualSlide(5);">Slide 5</a></li>
+		</ul> 
 	</div>
-	<div class="buttons">
-		<button onclick="slideImg(-1)">Previous Slide</button>
-		<button onclick="slideImg(1)">Next Slide</button>
+			
+			
+	<div class="listContainer"></div>
+		
+		
+	<div class="right">
+		<p> SOME STUFF GOES HERE </p>
+		<p> SOME STUFF GOES HERE </p>
+		<p> SOME STUFF GOES HERE </p>
+		
+		<p> SOME STUFF GOES HERE </p>
+		<p> SOME STUFF GOES HERE </p>
+		<p> SOME STUFF GOES HERE </p>
+		<p> SOME STUFF GOES HERE </p>
+		<p> SOME STUFF GOES HERE </p>
+		<p> SOME STUFF GOES HERE </p>
+		<p> SOME STUFF GOES HERE </p>
 	</div>
+
 </body>
 </html>
+
+
+
+<!-- <div class="buttons">
+				<button onclick="loadIndividualSlide(1)">Load1Slide</button>
+				<button onclick="loadIndividualSlide(2)">Load2Slide</button></div> -->
