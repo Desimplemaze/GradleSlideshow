@@ -28,7 +28,7 @@ body {
 	width: 25%;
 	position:absolute;
 	right:0;
-	top:10%;
+	top:15%;
 }
 .left {
 	/*keeps on page*/
@@ -79,7 +79,7 @@ body {
 	font-variant: small-caps;
 }
 
-.button {
+.Next, .Prev {
    border-top: 1px solid #96d1f8;
    background: #65a9d7;
    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));

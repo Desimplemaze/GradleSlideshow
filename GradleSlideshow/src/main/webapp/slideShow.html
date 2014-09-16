@@ -2,10 +2,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>SlideShow</title>
+<title>Enhanced View</title>
 <link rel="stylesheet" type="text/css" href="css/Slideshow.css">
-<script type="text/javascript" src="js/Slideshow.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script data-main="js/main.js" src="js/require.js"></script>
+
 </head>
 
 <h1>This is a SlideShow!</h1>
@@ -13,35 +14,24 @@
 	<div class="left">
 		<h1>Navigation</h1>
 		<ul>
-			<li><a href="javascript:loadIndividualSlide(1);">Slide 1</a></li>
-			<li><a href="javascript:loadIndividualSlide(2);">Slide 2</a></li>
-			<li><a href="javascript:loadIndividualSlide(3);">Slide 3</a></li>
-    	  	<li><a href="javascript:loadIndividualSlide(4);">Slide 4</a></li>
-      		<li><a href="javascript:loadIndividualSlide(5);">Slide 5</a></li>
+			<li><a href="normalView.html">Normal View</a></li>
+			<li><a href="#" data-index="1">Slide 1</a></li>
+			<li><a href="#" data-index="2">Slide 2</a></li>
+			<li><a href="#" data-index="3">Slide 3</a></li>
+    	  	<li><a href="#" data-index="4">Slide 4</a></li>
+      		<li><a href="#" data-index="5">Slide 5</a></li>
 		</ul> 
 	</div>
 	
 	<div class="buttonsAligned">
-			<button class="button" onclick="loadNextSlide(-1)">Prev</button>
-			<button class="button" onclick="loadNextSlide(1)">Next</button></div>
+			<button class="Prev">Prev</button>
+			<button class="Next">Next</button></div>
 			
 	<div class="listContainer"></div>
 		
 		
 		
-	<div class="right">
-		<p> SOME STUFF GOES HERE </p>
-		<p> SOME STUFF GOES HERE </p>
-		<p> SOME STUFF GOES HERE </p>
-		
-		<p> SOME STUFF GOES HERE </p>
-		<p> SOME STUFF GOES HERE </p>
-		<p> SOME STUFF GOES HERE </p>
-		<p> SOME STUFF GOES HERE </p>
-		<p> SOME STUFF GOES HERE </p>
-		<p> SOME STUFF GOES HERE </p>
-		<p> SOME STUFF GOES HERE </p>
-	</div>
+	<div class="right"></div>
 
 </body>
 </html>

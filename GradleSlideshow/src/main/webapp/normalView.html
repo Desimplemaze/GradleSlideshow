@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Normal View</title>
+<link rel="stylesheet" type="text/css" href="css/Slideshow.css">
+<script src="js/require.js"></script>
+</head>
+<body>
+	<div class="buttonsAligned">
+		<button class="Prev">Prev</button>
+		<button class="Next">Next</button>
+	</div>
+
+	<div class="left">
+		<h1>Navigation</h1>
+		<ul>
+			<li><a href="slideShow.html">Normal View</a></li>
+		</ul> 
+	</div>
+	<div class="listContainer"></div>
+
+	<script type="text/javascript">
+		requirejs.config({
+       		paths : {
+            	jquery : '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min'
+        	}
+    	});
+		
+		
+		require([ 'js/loadSlide1', 'js/traverseSlides' ], function(loadSlide1, traverseSlides) {
+			// I did not put anything here because you dont need it, the loadSlide1 does something and thats all you need to do.
+			// All i need now is the message
+		});
+	</script>
+</body>
+</html>
