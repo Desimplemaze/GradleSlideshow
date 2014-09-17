@@ -16,7 +16,7 @@ requirejs.config({
  * there is no need for .js because it is asking for module name, not name of the file
  */
 // this app will require the jquery AND your regular js file.
-require(['loadSlide1', 'traverseSlides', 'message'], function(loadSlide1, traverseSlides, message){
+require(['loadSlide1', 'traverseSlides', 'calander'], function(loadSlide1, traverseSlides, calander){
 	// I did not put anything here because you dont need it, the loadSlide1 does something and thats all you need to do.
 	// All i need now is the message
 	
