@@ -1,0 +1,27 @@
+{
+   "slides": [
+       {
+           "location": "database/document1.html"
+       },
+       
+       {
+           "location": "database/document2.html"
+       },
+       
+       {
+           "location": "database/document3.html"
+       },
+       
+       {
+           "location": "database/document4.html"
+       },
+       
+       {
+           "location": "database/document5.html"
+       },
+       
+       {
+           "location": "database/document6.html"
+       }
+   ]
+}
