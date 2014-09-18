@@ -2,7 +2,7 @@
  * 
  */
 
-//you can write a dependancy for jquery here if you want like.... define(['jquery'])
+//js/jquery-ui.js, this is specific to the datePicker.
 define(['jquery', 'js/jquery-ui.js'], function($){
 	// prints out the message
 	//$(".right").html(calander);
